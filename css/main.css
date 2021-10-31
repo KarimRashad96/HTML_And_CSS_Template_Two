@@ -522,12 +522,13 @@ ul {
   text-align: center;
   color: var(--main-text-color);
   background-color: var(--transparent-color);
-  padding: 50px;
+  padding: 10px;
 }
 .video__text h2 {
   font-weight: normal;
   text-transform: uppercase;
   margin-bottom: 30px;
+  font-size: 18px;
 }
 .video__text p {
   margin-bottom: 30px;
@@ -538,6 +539,14 @@ ul {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+}
+@media (min-width: 767px) {
+  .video__text {
+    padding: 50px;
+  }
+  .video__text h2 {
+    font-size: revert;
+  }
 }
 /* End Video */
 /* Start About */
